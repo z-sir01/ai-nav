@@ -75,8 +75,8 @@ select {
   right: 0;
   z-index: 100;
   background: rgba(10, 10, 26, 0.8);
-  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--glass-border);
 }
 
@@ -227,8 +227,8 @@ select {
   font-size: 13px;
   color: var(--text-secondary);
   cursor: pointer;
-  appearance: none;
   -webkit-appearance: none;
+  appearance: none;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%238888aa' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 12px center;
@@ -331,7 +331,6 @@ select {
   gap: 10px;
   overflow-x: auto;
   padding: 4px 0;
-  scrollbar-width: none;
   -ms-overflow-style: none;
 }
 
@@ -649,8 +648,8 @@ select {
   inset: 0;
   z-index: 200;
   background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -850,8 +849,8 @@ select {
   z-index: 1;
   border-top: 1px solid var(--glass-border);
   background: rgba(10, 10, 26, 0.9);
-  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 
 .footer-inner {
