@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Nav — 精选 AI 工具导航站</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 粒子背景 -->
+  <canvas id="particles"></canvas>
+
+  <!-- 顶部导航 -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="#" class="logo" onclick="resetAll()">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">AI Nav</span>
+      </a>
+
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+        <input type="text" id="searchInput" placeholder="搜索 AI 工具..." autocomplete="off">
+        <button class="search-clear" id="searchClear" onclick="clearSearch()">✕</button>
+      </div>
+
+      <nav class="header-nav">
+        <button class="nav-btn" id="viewToggle" onclick="toggleView()">
+          <span class="nav-btn-icon">★</span>
+          <span class="nav-btn-text">收藏</span>
+        </button>
+        <select class="sort-select" id="sortSelect" onchange="handleSort(this.value)">
+          <option value="hot">🔥 热门</option>
+          <option value="rating">⭐ 评分</option>
+          <option value="new">🆕 最新</option>
+        </select>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero 区域 -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">发现最好的 <span class="gradient-text">AI 工具</span></h1>
+      <p class="hero-subtitle">精选 100+ AI 工具，覆盖聊天、绘图、代码、写作、视频等全场景</p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" id="statTools">0</span>
+          <span class="stat-label">收录工具</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" id="statCategories">0</span>
+          <span class="stat-label">分类</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" id="statUpdated">0</span>
+          <span class="stat-label">今日更新</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分类筛选 -->
+  <section class="categories">
+    <div class="categories-inner">
+      <div class="category-scroll" id="categoryScroll">
+        <!-- JS 动态渲染 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 工具卡片网格 -->
+  <main class="tools-section">
+    <div class="tools-header">
+      <h2 class="tools-title" id="toolsTitle">全部工具</h2>
+      <span class="tools-count" id="toolsCount">共 0 个工具</span>
+    </div>
+    <div class="tools-grid" id="toolsGrid">
+      <!-- JS 动态渲染 -->
+    </div>
+    <div class="empty-state" id="emptyState" style="display:none;">
+      <div class="empty-icon">🔍</div>
+      <p>没有找到匹配的工具</p>
+      <p class="empty-hint">试试其他关键词或分类</p>
+    </div>
+  </main>
+
+  <!-- 工具详情弹窗 -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+    <div class="modal" id="modal">
+      <button class="modal-close" onclick="hideModal()">✕</button>
+      <div class="modal-body" id="modalBody">
+        <!-- JS 动态填充 -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-section">
+        <h3>关于本站</h3>
+        <p>AI Nav 是一个精选 AI 工具导航平台，致力于帮助用户快速发现和选择合适的 AI 工具。</p>
+      </div>
+      <div class="footer-section">
+        <h3>快速链接</h3>
+        <a href="#">首页</a>
+        <a href="#">热门工具</a>
+        <a href="#">最新发布</a>
+        <a href="#">工具提交</a>
+      </div>
+      <div class="footer-section">
+        <h3>联系我们</h3>
+        <a href="#">商务合作</a>
+        <a href="#">意见反馈</a>
+        <a href="#">友情链接</a>
+      </div>
+      <div class="footer-section">
+        <h3>法律声明</h3>
+        <p>本站内容仅供参考，工具链接指向第三方网站。本站不参与任何工具的服务提供。</p>
+        <p>© 2026 AI Nav. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
