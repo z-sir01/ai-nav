@@ -4,7 +4,7 @@
  *
  * 💰 赚钱方式：
  *   - 有推广计划的工具已填入 affiliate/referral 链接
- *   - 无推广计划的工具（ChatGPT/Claude/Sora/FLUX/Stable Diffusion/Writer/Tableau/Adobe Podcast）保留官网链接
+ *   - 无推广计划的工具保留官网链接
  *   - 你注册各平台推广计划后，替换 link 字段为你的专属推广链接即可赚佣金
  *
  * 佣金排行榜（按佣金比例）：
@@ -16,6 +16,38 @@
  */
 const AI_TOOLS = [
   // ===== 聊天对话 =====
+  {
+    id: 4,
+    name: '文心一言',
+    nameEn: 'ERNIE Bot',
+    category: 'chat',
+    icon: '📝',
+    rating: 4.4,
+    desc: '百度推出的中文 AI 对话模型，中文理解能力出色，深度整合百度生态。',
+    detail: '百度文心一言是基于 ERNIE 4.0 的 AI 对话产品，在中文理解和生成方面表现优秀。深度整合百度搜索、文库、地图等产品，提供本土化的 AI 服务体验。',
+    features: ['中文优化', '百度搜索整合', '文库检索', '图片生成', '代码生成', '本土化'],
+    price: '免费 / 会员 ¥30/月',
+    hot: 6543,
+    date: '2026-06-15',
+    // ✅ 百度千帆推广合伙人，最高 30% 佣金
+    link: 'https://cloud.baidu.com/campaign/ambassador-product/index.html?ambassadorId=44dc1523f6304ede84545715f186136e',
+  },
+  {
+    id: 5,
+    name: '通义千问',
+    nameEn: 'Qwen',
+    category: 'chat',
+    icon: '🧠',
+    rating: 4.6,
+    desc: '阿里巴巴推出的 AI 大模型，支持超长上下文和多语言对话。',
+    detail: '通义千问是阿里开发的 AI 大语言模型，支持 100 多种语言，上下文窗口可达 256K tokens。在数学计算、代码生成和逻辑推理方面有突出表现，且提供免费 API 使用。',
+    features: ['100+ 语言', '256K 上下文', '数学计算', '代码生成', '免费 API', '多模态'],
+    price: '免费 / 企业版定制',
+    hot: 7200,
+    date: '2026-06-22',
+    // ✅ 阿里云百炼推广分销计划，30% API 返佣
+    link: 'https://www.aliyun.com/minisite/goods?userCode=aib4zb8k',
+  },
   {
     id: 1,
     name: 'ChatGPT',
@@ -63,40 +95,6 @@ const AI_TOOLS = [
     date: '2026-06-20',
     // ✅ Google AI 有合作伙伴计划
     link: 'https://aistudio.google.com/?utm_source=ainav',
-  },
-  {
-    id: 4,
-    name: '文心一言',
-    nameEn: 'ERNIE Bot',
-    category: 'chat',
-    icon: '📝',
-    rating: 4.4,
-    desc: '百度推出的中文 AI 对话模型，中文理解能力出色，深度整合百度生态。',
-    detail: '百度文心一言是基于 ERNIE 4.0 的 AI 对话产品，在中文理解和生成方面表现优秀。深度整合百度搜索、文库、地图等产品，提供本土化的 AI 服务体验。',
-    features: ['中文优化', '百度搜索整合', '文库检索', '图片生成', '代码生成', '本土化'],
-    price: '免费 / 会员 ¥30/月',
-    hot: 6543,
-    date: '2026-06-15',
-    // ✅ 百度智能云千帆推广计划，最高 30% 佣金
-    // ✅ 百度千帆推广合伙人，最高 30% 佣金
-    link: 'https://cloud.baidu.com/campaign/ambassador-product/index.html?ambassadorId=44dc1523f6304ede84545715f186136e',
-  },
-  {
-    id: 5,
-    name: '通义千问',
-    nameEn: 'Qwen',
-    category: 'chat',
-    icon: '🧠',
-    rating: 4.6,
-    desc: '阿里巴巴推出的 AI 大模型，支持超长上下文和多语言对话。',
-    detail: '通义千问是阿里开发的 AI 大语言模型，支持 100 多种语言，上下文窗口可达 256K tokens。在数学计算、代码生成和逻辑推理方面有突出表现，且提供免费 API 使用。',
-    features: ['100+ 语言', '256K 上下文', '数学计算', '代码生成', '免费 API', '多模态'],
-    price: '免费 / 企业版定制',
-    hot: 7200,
-    date: '2026-06-22',
-    // ✅ 阿里云百炼推广分销计划，30% API 返佣
-    // ✅ 阿里云百炼推广分销计划，30% API 返佣
-    link: 'https://www.aliyun.com/minisite/goods?userCode=aib4zb8k',
   },
 
   // ===== 图像生成 =====
