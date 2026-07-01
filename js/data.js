@@ -78,7 +78,8 @@ const AI_TOOLS = [
     hot: 6543,
     date: '2026-06-15',
     // ✅ 百度智能云千帆推广计划，最高 30% 佣金
-    link: 'https://yiyan.baidu.com/?promoid=ainav',
+    // ✅ 百度千帆推广合伙人，最高 30% 佣金
+    link: 'https://cloud.baidu.com/campaign/ambassador-product/index.html?ambassadorId=44dc1523f6304ede84545715f186136e',
   },
   {
     id: 5,
@@ -94,7 +95,8 @@ const AI_TOOLS = [
     hot: 7200,
     date: '2026-06-22',
     // ✅ 阿里云百炼推广分销计划，30% API 返佣
-    link: 'https://tongyi.aliyun.com/?spm=ainav',
+    // ✅ 阿里云百炼推广分销计划，30% API 返佣
+    link: 'https://www.aliyun.com/minisite/goods?userCode=aib4zb8k',
   },
 
   // ===== 图像生成 =====
